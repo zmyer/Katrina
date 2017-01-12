@@ -3,8 +3,7 @@ project(Katrina)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp
-        include/main/Katrina/spout/ISpout.h
+set(SOURCE_FILES include/main/Katrina/spout/ISpout.h
         include/main/Katrina/bolt/IBolt.h
         include/main/Katrina/base/Values.h
         include/main/Katrina/message/MessageLoop.h
@@ -46,5 +45,5 @@ set(SOURCE_FILES main.cpp
         src/main/Katrina/base/NetConnector.cpp
         src/main/Katrina/base/NetListener.cpp
         src/main/Katrina/base/OutputCollector.cpp
-        src/main/Katrina/bolt/BoltExecutor.cpp src/main/Katrina/bolt/BoltOutputCollector.cpp src/main/Katrina/message/CommandDispathcer.cpp src/main/Katrina/message/MessageLoop.cpp src/main/Katrina/message/NimbusCommander.cpp src/main/Katrina/message/SupervisorCommander.cpp src/main/Katrina/spout/SpoutExecutor.cpp src/main/Katrina/spout/SpoutOutputCollector.cpp include/main/Katrina/spout/SpoutOutputCollector.h src/main/Katrina/topology/SimpleTopology.cpp src/main/Katrina/topology/TopologyBuilder.cpp src/main/Katrina/NimbusLauncher.cpp include/main/Katrina/spout/SpoutExecutor.h deps/donet/include/Donet.h deps/donet/include/net.h deps/donet/include/DataSink.h deps/donet/include/bytearray.h deps/donet/include/utils/exendian.h deps/donet/include/PackageDataSink.h deps/donet/include/eventqueue.h deps/donet/include/loop.h deps/donet/include/epoll/EpollClient.h deps/donet/include/epoll/EpollServer.h)
+        src/main/Katrina/bolt/BoltExecutor.cpp src/main/Katrina/bolt/BoltOutputCollector.cpp src/main/Katrina/message/CommandDispathcer.cpp src/main/Katrina/message/MessageLoop.cpp src/main/Katrina/message/NimbusCommander.cpp src/main/Katrina/message/SupervisorCommander.cpp src/main/Katrina/spout/SpoutExecutor.cpp src/main/Katrina/spout/SpoutOutputCollector.cpp include/main/Katrina/spout/SpoutOutputCollector.h src/main/Katrina/topology/SimpleTopology.cpp src/main/Katrina/topology/TopologyBuilder.cpp src/main/Katrina/NimbusLauncher.cpp include/main/Katrina/spout/SpoutExecutor.h deps/donet/include/Donet.h deps/donet/include/Net.h deps/donet/include/DataSink.h deps/donet/include/Bytearray.h deps/donet/include/utils/Exendian.h deps/donet/include/PackageDataSink.h deps/donet/include/Eventqueue.h deps/donet/include/loop.h deps/donet/include/epoll/EpollClient.h deps/donet/include/epoll/EpollServer.h deps/donet/include/IoLoop.h deps/donet/include/Eventqueueloop.h deps/donet/include/epoll/EpollStream.h deps/donet/include/epoll/EpollConnection.h deps/donet/include/epoll/EpollLoop.h deps/donet/include/bsd/Net_bsd.h deps/donet/include/utils/ConcurrentQueue.h deps/donet/include/utils/ThreadPool.h deps/donet/src/Net.cpp deps/donet/src/PackageDataSink.cpp deps/donet/include/http/HttpClient.h deps/donet/include/http/HttpServer.h deps/donet/include/http/HttpContext.h deps/donet/include/http/HttpConnection.h deps/donet/include/http/HttpRequest.h deps/donet/include/http/HttpResponse.h deps/donet/include/http/HttpDataSink.h)
 add_executable(Katrina ${SOURCE_FILES})

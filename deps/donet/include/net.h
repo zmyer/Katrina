@@ -16,9 +16,10 @@
 #endif
 
 
-
 #include <functional>
 #include "DataSink.h"
+#include "Bytearray.h"
+#include "bsd/Net_bsd.h"
 
 namespace donet {
     class Socket {

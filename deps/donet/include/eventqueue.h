@@ -5,8 +5,8 @@
 #ifndef KATRINA_EVENTQUEUE_H
 #define KATRINA_EVENTQUEUE_H
 
-#include "bytearray.h"
-#include "net.h"
+#include "Bytearray.h"
+#include "Net.h"
 
 namespace donet {
     class BaseEvent {

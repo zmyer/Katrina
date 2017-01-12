@@ -5,7 +5,7 @@
 #ifndef KATRINA_DATASINK_H
 #define KATRINA_DATASINK_H
 
-#include "net.h"
+#include "Net.h"
 
 namespace donet {
     class DataSink {

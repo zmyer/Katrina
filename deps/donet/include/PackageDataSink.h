@@ -6,7 +6,8 @@
 #define KATRINA_PACKAGEDATASINK_H
 
 #include "DataSink.h"
-#include "bytearray.h"
+#include "Bytearray.h"
+#include "Eventqueue.h"
 
 namespace donet {
     class PackageDataSink : public DataSink {
