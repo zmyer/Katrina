@@ -9,7 +9,7 @@
 
 namespace donet {
     typedef int32_t NativeSocket;
-    typedef struct socket_in NativeSocketAddress;
+    typedef struct sockaddr_in NativeSocketAddress;
 }
 
 #endif //KATRINA_NET_BSD_H

@@ -30,7 +30,7 @@ namespace donet {
         EpollConnectionPtr Accept(int32_t socketfd);
 
     private:
-        uint32_t _Bind(const std::string &host, uint32_t port);
+        int32_t _Bind(const std::string &host, uint32_t port);
 
         DataSink *_dataSink;
         ConnectIndicationHandler _connectionHandler;

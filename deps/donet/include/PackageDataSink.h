@@ -8,6 +8,7 @@
 #include "DataSink.h"
 #include "Bytearray.h"
 #include "Eventqueue.h"
+#include "utils/ThreadPool.h"
 
 namespace donet {
     class PackageDataSink : public DataSink {
